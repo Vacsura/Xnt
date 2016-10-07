@@ -1,5 +1,5 @@
 <?php
-namespace Xnt\Database\Test\ConnectionTest;
+namespace Xnt\Database\Test;
 
 use PHPUnit\Framework\TestCase;
 
@@ -7,7 +7,7 @@ class ConnectionTest extends TestCase
 {
     public static function setUpBeforeClass()
     {
-        require_once('../../../Autoloader.php');
+        require_once('../../Autoloader.php');
         \Xnt\Autoloader::register();
     }
 
