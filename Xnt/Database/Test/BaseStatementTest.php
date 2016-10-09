@@ -3,7 +3,7 @@ namespace Xnt\Database\Test;
 
 use PHPUnit\Framework\TestCase;
 
-class StatementTest extends TestCase
+class BaseStatementTest extends TestCase
 {
     public static $statement;
 
@@ -12,7 +12,7 @@ class StatementTest extends TestCase
         require_once('../../Autoloader.php');
         \Xnt\Autoloader::register();
         $conn = new \Xnt\Database\Connection('conf.ini');
-        self::$statement = new \Xnt\Database\Statement($conn);
+        self::$statement = new \Xnt\Database\BaseStatement($conn);
     }
 
     public function testExecute()

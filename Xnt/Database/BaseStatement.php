@@ -1,7 +1,7 @@
 <?php
 namespace Xnt\Database;
 
-class Statement
+class BaseStatement
 {
     /** @var \PDO */
     protected $connection;
